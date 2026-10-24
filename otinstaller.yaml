@@ -50,7 +50,7 @@ secrets:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/otx-indicators@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/otx-indicators@sha256:bc8f09ccbaab1a6f1a37983d4322f895ec379be433917e9e042025a8dbba16fd
   platforms: [linux/amd64, linux/arm64]
   command: ["otx-indicators", "--ip", "{ip}", "--domain", "{domain}", "--url", "{url}", "--hash", "{hash}"]
   output_format: json
